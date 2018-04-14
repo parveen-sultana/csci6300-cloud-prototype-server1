@@ -12,3 +12,5 @@ dump/
 coverage
 *.orig
 .env
+technology_list_A.json
+technology_list_B.json
