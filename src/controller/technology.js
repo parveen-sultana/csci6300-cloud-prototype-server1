@@ -30,6 +30,7 @@ export default () => {
   });
   
   api.post('/add', authenticate,  (req, res) =>{
+      console.log(req.headers)
     Technology.findOne({"name":req.body.name}, (err, name) => {
         if (err) {
             return res.status(500).json({
